@@ -11,6 +11,10 @@ const Blogs = () => {
       setStyle({animation: 'card 1s ease-out forwards'})
       window.removeEventListener('scroll', () => console.log('Passed'))
     }
+    if(e.path[1].innerHeight < 800 && e.path[1].pageYOffset >= 2300) {
+      setStyle({animation: 'card 1s ease-out forwards'})
+      window.removeEventListener('scroll', () => console.log('Passed'))
+    }
   }
 
   useEffect(() => {
