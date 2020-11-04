@@ -7,7 +7,7 @@ const Blogs = () => {
   const [style, setStyle] = useState({})
 
   const scrollHandler = (e) => {
-    if(e.path[1].pageYOffset >= 3400) {
+    if(e.path[1].pageYOffset >= 3000) {
       setStyle({animation: 'card 1s ease-out forwards'})
       window.removeEventListener('scroll', () => console.log('Passed'))
     }
